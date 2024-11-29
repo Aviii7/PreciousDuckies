@@ -69,13 +69,16 @@
         .music1 {
           display: flex;
           justify-self: start;
-          flex: column;
+          flex-direction: column;
           left: 11.3vw;
           top: 37.2vh;
           position: relative;
           width: 16vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
           overflow: hidden;
+        }
+        .music:hover {
+          color: rgb(0, 5, 8);
         }
         .music1::before {
           content: '';
@@ -85,7 +88,7 @@
           width: 100%;
           height: 100%;
           background: linear-gradient(90deg, transparent, rgb(255, 70, 85), transparent);
-          transition-duration: 0.5s;
+          transition: 0.5s;
         }
         .music1:hover::before {
           left: 100%;
