@@ -91,14 +91,32 @@
           font-weight: 500;
           text-align: justify;
         }
+        .shine {
+          position: absolute;
+          right: 13.8vw;
+          top: 0.6vh;
+          width: 13vw;
+          transform: translate(13.8vw, -0.6vh);
+          overflow: hidden;
+        }
         .redirect_button {
           z-index: 3;
-          position: relative;
-          left: 11vw;
-          bottom: 56.5vh;
-          width: 13vw;
+          width: 100%;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(255, 70, 85, 0.5));
-          overflow: hidden;
+        }
+        .shine:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 13.8vw;;
+          width: 6.5vw;
+          height: 2.5vh;
+          background: rgba(255, 255, 255, 0.3);
+          transform: skewX(-30deg);
+          transition: 0.5s;
+        }
+        .shine:hover:before {
+          right: 6.8vw;
         }
         .information_header {
           position: absolute;
@@ -128,7 +146,9 @@
           <img class="barrier" src="barrier1.png"/>
           <img class="music1" id="music" src="music1.png"/>
           <img class="music2" src="music2.png"/>
-          <img class="redirect_button" src="button.png"/>
+          <div class="shine">
+            <img class="redirect_button" src="button.png"/>
+          </div>
         </section>
           <span class="logo"><mark class="mark_logo">&nbspPDD  //  NEWS&nbsp</mark></span>
           <span class="header">BLOODHOUND</span>
