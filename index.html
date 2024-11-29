@@ -45,11 +45,6 @@
           background-color: rgb(255, 255, 255);
           padding: 0.5vw;
         }
-        .logo:hover {
-          color: rgb(255, 70, 85);
-          background-color: rgb(255, 255, 255);
-          transition-duration: 0.5s;
-        }
         .header {
           position: absolute;
           left: 13.7vw;
@@ -74,6 +69,22 @@
           position: absolute;
           width: 16vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
+          overflow: hidden;
+        }
+        .music1:hover {
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in-out;
+          transform: scale(1.125);
+        }
+        .music1::before {
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(90deg, transparent, rgb(255, 70, 85) transparent);
+          transition-duration: 0.5s;
+        }
+        .music:hover::before {
+          left: 100%;
         }
         .music2 {
           left: 11.3vw;
@@ -81,6 +92,12 @@
           position: absolute;
           width: 16vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
+          overflow: hidden;
+        }
+        .music2:hover {
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in-out;
+          transform: scale(1.125);
         }
         .description {
           position: absolute;
@@ -99,6 +116,11 @@
           top: 0.6vh;
           width: 13vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(255, 70, 85, 0.5));
+        }
+        .redirect_button {
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in-out;
+          transform: scale(1.125);
         }
         .information_header {
           position: absolute;
