@@ -19,10 +19,15 @@
           transform: scale(1.125);
           transition-duration: 0.5s;
           transition-timing-function: ease-in-out;
-        }
-        body:hover {
-            padding: 3.75vw 7.5vw 7.5vw;
+          :root {
+            --base-padding: 16px;
+            --reduced-padding: calc(var(--base-padding) - (var(--base-padding) / 4));
           }
+
+          * {
+            padding: var(--reduced-padding);
+          }
+        }
         .strip {
           width: 24vw;
           height: 80vh;
