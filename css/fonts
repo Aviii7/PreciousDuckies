@@ -1,4 +1,0 @@
-@font-face {
-  font-family: "321 Impact";
-  src: url('../321impact.ttf') format('truetype');
-}
