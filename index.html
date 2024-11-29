@@ -73,22 +73,12 @@
           width: 16vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
         }
-        .music1:hover {
-          transition-duration: 0.5s;
-          transition-timing-function: ease-in-out;
-          transform: scale(1.125);
-        }
         .music2 {
           left: 11.3vw;
           top: 47.8vh;
           position: absolute;
           width: 16vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
-        }
-        .music2:hover {
-          transition-duration: 0.5s;
-          transition-timing-function: ease-in-out;
-          transform: scale(1.125);
         }
         .description {
           position: absolute;
@@ -102,11 +92,32 @@
           text-align: justify;
         }
         .redirect_button {
+          z-index: 3;
+          display: flex;
+          cursor: pointer;
           position: absolute;
           right: 13.2vw;
           top: 0.6vh;
           width: 13vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(255, 70, 85, 0.5));
+          overflow: hidden;
+        }
+        .redirect_button:before {
+          content: '';
+          position: absolute;
+          right: 13.2vw;
+          top: 0.6vh;
+          width: 2vw;
+          height: 3vh;
+          background: rgb(243, 243, 243);
+          box-shadow: 0 0 10px rgb(255, 255, 255);
+          filter: blur(1px);
+          opacity: 0.9;
+          transition: 0.7s;
+          transform: rotate(-20deg) translateX(-60px);
+        }
+        .redirect_button:hover:before {
+          transform: rotate(-20deg) translate(140px, 70px);
         }
         .information_header {
           position: absolute;
