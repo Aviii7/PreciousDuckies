@@ -71,11 +71,6 @@
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
           overflow: hidden;
         }
-        .music1:hover {
-          transition-duration: 0.5s;
-          transition-timing-function: ease-in-out;
-          transform: scale(1.125);
-        }
         .music1::before {
           left: -100%;
           width: 100%;
@@ -85,6 +80,8 @@
         }
         .music:hover::before {
           left: 100%;
+          transition-timing-function: ease-in-out;
+          transform: scale(1.125);
         }
         .music2 {
           left: 11.3vw;
