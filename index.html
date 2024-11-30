@@ -104,6 +104,16 @@
         .music1:hover {
           transform: scale(1.125);
           transition: transform 0.5s ease-in-out;
+          -webkit-animation: shake 5s ease-in-out 5s infinite alternate;
+        }
+        @-webkit-keyframes shake {
+          from {
+            -webkit-transform: rotate(15deg);
+          }
+          to {
+            -webkit-transform: rotate(-15deg);
+            -webkit-transform-origin: center center;
+          }
         }
         .music2 {
           left: 13.2vw;
