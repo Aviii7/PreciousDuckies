@@ -9,6 +9,24 @@
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
           width: 80vw;
           height: 80vh;
+          z-index: 1;
+        }
+        .box {
+          margin:5vw 10vw 10vw;
+          width: 80vw;
+          height: 80vh;
+          position: relative;
+          transform: translate(0);
+          transform-style: preserve-3d;
+        }
+        .shadow:before {
+          content:"";
+          position: absolute;
+          inset: 0;
+          transform: translate3d(0,0,-1px);
+          background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+          filter: blur(10px);
+          clip-path: polygon(-100vmax -100vmax,100vmax -100vmax,100vmax 100vmax,-100vmax 100vmax,-100vmax -100vmax,0 0,0 100%,100% 100%,100% 0,0 0);
         }
         .article2 {
           background-color: rgb(255, 255, 255);
@@ -20,6 +38,7 @@
           width: 24vw;
           height: 80vh;
           padding-left: 28vw;
+          z-index: 1;
         }
         .icon {
           left: 25vw;
@@ -27,13 +46,14 @@
           position: absolute;
           width: 32vw;
           filter: drop-shadow(0 8px 30px rgb(0, 0, 0, 0.5));
-          z-index: 1;
+          z-index: 2;
         }
         .barrier {
           position: absolute;
           width: 0.13vw;
           height: 80vh;
           left: 13.5vw;
+          z-index: 1;
         }
         .logo {
           position: absolute;
@@ -44,7 +64,7 @@
           font-size: 2.5vw;
           font-weight: 400;
           letter-spacing: 0.15vw;
-          z-index: 2;
+          z-index: 3;
         }
         .logo:hover {
           color: rgb(255, 70, 85);
@@ -67,7 +87,7 @@
           font-family: "Gill Sans", sans-serif;
           font-size: 2.2vw;
           font-weight: 550;
-          z-index: 2;
+          z-index: 3;
         }
         .header:hover {
           color: rgb(255, 70, 85);
@@ -81,7 +101,7 @@
           font-family: "Gill Sans", sans-serif;
           font-size: 1vw;
           font-weight: 600;
-          z-index: 2;
+          z-index: 3;
         }
         .catch_phrase:hover {
           color: rgb(55, 70, 85);
@@ -93,7 +113,7 @@
           position: absolute;
           width: 14vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
-          z-index: 3;
+          z-index: 4;
         }
         .music1:hover {
           transform: scale(1.125);
@@ -105,7 +125,7 @@
           position: absolute;
           width: 14vw;
           filter: drop-shadow(4.0px 8.0px 8.0px rgba(0, 0, 0, 0.1));
-          z-index: 4;
+          z-index: 5;
         }
         .music2:hover {
           transform: scale(1.125);
@@ -122,6 +142,7 @@
           font-size: 1vw;
           font-weight: 500;
           text-align: justify;
+          z-index: 1;
         }
         .description:hover {
           color: rgb(255, 70, 85);
@@ -133,7 +154,7 @@
           top: 14.6vh;
           width: 13vw;
           box-shadow: 4.0px 8.0px 8.0px rgba(255, 70, 85, 0.5);
-          z-index: 2;
+          z-index: 3;
         }
         .redirect_button:hover {
           transform: scale(1.125);
@@ -147,7 +168,7 @@
           font-family: "Gill Sans", sans-serif;
           font-size: 1vw;
           font-weight: 600;
-          z-index: 2;
+          z-index: 3;
         }
         .information_header:hover {
           color: rgb(55, 70, 85);
@@ -162,7 +183,7 @@
           font-family: "Gill Sans", sans-serif;
           font-size: 1.8vw;
           font-weight: 550;
-          z-index: 2;
+          z-index: 3;
         }
         .information:hover {
           color: rgb(255, 70, 85);
@@ -171,6 +192,7 @@
       </style>
     </head>
     <body>
+      <section class="box shadow"></section>
       <section class="article1">
         <section>
           <img class="strip" src="strip1.png" alt="Background-Banner"/>
