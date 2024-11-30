@@ -102,16 +102,8 @@
           z-index: 3;
         }
         .music1:hover {
-          -webkit-animation: shake 1s ease-in-out 1s infinite alternate;
-        }
-        @-webkit-keyframes shake {
-          from {
-            -webkit-transform: rotate(15deg);
-          }
-          to {
-            -webkit-transform: rotate(-15deg);
-            -webkit-transform-origin: center center;
-          }
+          transform: scale(1.125);
+          transition: transform 0.5s ease-in-out;
         }
         .music2 {
           left: 13.2vw;
