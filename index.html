@@ -3,20 +3,14 @@
     <head>
       <meta charset="UTF-8">
       <style>
-        body {
-          padding: 5vw 10vw 10vw;
-          background: url("icon1.png") transparent,
-                      url("music1.png") transparent,
-                      url("music2.png") transparent;
-        }
        .article1 {
+          margin: 5vw 10vw 10vw;
           background-color: rgb(255, 255, 255);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
           width: 80vw;
           height: 80vh;
         }
         .article2 {
-          padding: 5vw 10vw 10vw;
           background-color: rgb(255, 255, 255);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
           width: 60vw;
@@ -25,7 +19,7 @@
         .strip {
           width: 24vw;
           height: 80vh;
-          padding-left: 28vw;
+          left: 28vw;
         }
         .icon {
           left: 25vw;
@@ -118,9 +112,10 @@
           transition: transform 0.5s ease-in-out;
         }
         .description {
+          display: block;
           position: absolute;
-          padding-right: 13.8vw;
-          padding-left: 55.8vw;
+          right: 13.8vw;
+          left: 55.8vw;
           top: 25vh;
           color: rgb(205, 205, 205);
           font-family: "Gill Sans", sans-serif;
@@ -146,8 +141,8 @@
         }
         .information_header {
           position: absolute;
-          padding-right: 13.8vw;
-          padding-left: 55.8vw;
+          right: 13.8vw;
+          left: 55.8vw;
           color: rgb(255, 70, 85);
           font-family: "Gill Sans", sans-serif;
           font-size: 1vw;
@@ -159,9 +154,10 @@
           transition: 0.5s;
         }
         .information {
+          display: block;
           position: absolute;
-          padding-right: 13.8vw;
-          padding-left: 55.8vw;
+          right: 13.8vw;
+          left: 55.8vw;
           color: rgb(55, 70, 85);
           font-family: "Gill Sans", sans-serif;
           font-size: 1.8vw;
